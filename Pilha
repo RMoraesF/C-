@@ -1,0 +1,33 @@
+#include <iostream>
+#include <stack>
+
+using namespace std;
+
+int main() {
+
+   // criando uma pilha de inteiros
+   stack<int> minhaPilha;
+
+   // inserindo elementos na pilha
+   minhaPilha.push(10);
+   minhaPilha.push(20);
+   minhaPilha.push(30);
+
+   // removendo o topo da pilha
+   minhaPilha.pop();
+
+   // acessando o topo da pilha
+   int topo = minhaPilha.top();
+
+   // verificando se a pilha está vazia
+   bool vazia = minhaPilha.empty();
+
+   // mostrando os elementos da pilha
+   while (!minhaPilha.empty()) {
+      cout << minhaPilha.top() << " ";
+      minhaPilha.pop();
+   }
+   cout << endl;
+
+   return 0;
+}
